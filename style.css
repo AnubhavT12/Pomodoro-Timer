@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(22, 22, 22);
 }
 
 header{
@@ -14,7 +14,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
+    background-color: rgb(39, 43, 43);
     font-size: 30px;
 }
 
@@ -29,11 +29,27 @@ left_cont{
     height: 65vh;
     border: 2px solid beige;
     width: 35vw;
+    margin: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 right_cont{
     height: 65vh;
-    border: 2px solid beige;
-    width: 65vw;
+    width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(29, 31, 31);
+    height: 15vh;
 }
 
