@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(19, 18, 18);
 }
 
 header{
@@ -31,18 +31,18 @@ main{
     width: 35%;
     border: 2px solid;
     display: flex;
+    margin: 0 10px 0 0;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 2px;
     gap: 50px;
     text-align: center;
 }
 
 .right_cont{
     height: 95%;
-    width: 65%;
-    margin: 5px;
+    width: 60%;
+    margin: 0 0 0 10px;
     display: flex;
     border: 2px solid yellowgreen;
     align-items: center;
