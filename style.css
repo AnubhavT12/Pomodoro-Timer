@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: bisque;
+}
+
+body{
+    background-color: rgb(17, 17, 17);
+}
+
+header{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    font-size: 30px;
+}
+
+main{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+left_cont{
+    height: 65vh;
+    border: 2px solid beige;
+    width: 35vw;
+}
+
+right_cont{
+    height: 65vh;
+    border: 2px solid beige;
+    width: 65vw;
+}
+
