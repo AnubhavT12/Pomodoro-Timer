@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: bisque;
+    /* color: bisque; */
+    color: whitesmoke;
+    box-sizing: border-box;
 }
 
 body{
@@ -28,7 +30,7 @@ main{
 
 .left_cont{
     height: 95%;
-    width: 35%;
+    width: 45%;
     border: 2px solid;
     display: flex;
     margin: 0 10px 0 0;
@@ -37,17 +39,43 @@ main{
     flex-direction: column;
     gap: 50px;
     text-align: center;
+    border-radius: 10px;
 }
 
 .right_cont{
     height: 95%;
-    width: 60%;
+    width: 50%;
     margin: 0 0 0 10px;
     display: flex;
     border: 2px solid yellowgreen;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-radius: 10px;
+}
+
+.timer{
+
+    height: 100px;
+    width: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 2px solid blanchedalmond; */
+    padding: 10px;
+    margin: 0px;
+    border-radius: 10px;
+
+    font-size: 50px;
+}
+
+.btn-cont{
+    /* border: 2px solid blanchedalmond; */
+    display: flex;
+    border-radius: 10px;
+    /* background: linear-gradient(5deg, black, gray, white); */
 }
 
 footer{
@@ -56,5 +84,18 @@ footer{
     justify-content: center;
     background-color: rgb(29, 31, 31);
     height: 15vh;
+    font-size: 30px;
 }
+
+ .play , .pause{
+    border: 2px solid blanchedalmond;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    margin: 10px;
+    border-radius: 10px;
+ }
 
