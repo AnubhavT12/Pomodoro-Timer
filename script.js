@@ -21,10 +21,27 @@ let isPaused = false
 
 function startTimer (count){
 
-    if (isPaused === true){
+    if (isPaused === false){
 
-        let start_sec_count = setInterval( function(){
-        sec.innerHTML=`${seconds--}`
+        let start_sec_count = setInterval(function(){
+
+            // if(seconds > 50 ){
+            //     sec.innerHTML=`${seconds--}`
+            // }
+
+            // else if (seconds = 50){
+            //     let seconds = 59
+            // }
+
+            for(seconds=0; seconds>0; seconds--) {
+                sec.innerHTML=`${seconds--}`
+            }
+
+            // for (let index = 0; index < array.length; index++) {
+            //     const element = array[index];
+                
+            // }
+
         },1000)
 
         let start_min_count = setInterval( function(){
@@ -33,8 +50,8 @@ function startTimer (count){
 
     }
 
-    else{
-        
+    else {
+        setInterval
     }
 
     playBtn.style.display="none"
