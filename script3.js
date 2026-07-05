@@ -8,10 +8,15 @@ const CounterSpan = document.querySelector("#countspan")
 const min = document.querySelector("#min");
 const sec = document.querySelector("#sec");
 
+pauseBtn.style.display="none"
+
 
 playBtn.addEventListener("click",(e)=>{
 
     console.log("button was clicked")
+
+    playBtn.style.display="none"
+    pauseBtn.style.display="inline"
 
     function starttimer (duration,display){
 
@@ -35,7 +40,16 @@ playBtn.addEventListener("click",(e)=>{
         if (--timer < 0){
             clearInterval(interval)
             alert("times up")
-        }    
+        }
+
+        pauseBtn.addEventListener("click", (evt) => {
+            clearInterval(interval)
+            isPaused = true
+            playBtn.style.display="inline"
+            pauseBtn.style.display="none"
+        })
+
+        
 
     },1000)
 
