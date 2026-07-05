@@ -3,6 +3,7 @@ const btnCOnt = document.querySelector(".btn-cont");
 
 const playBtn = document.querySelector(".play");
 const pauseBtn = document.querySelector(".pause");
+const CounterSpan = document.querySelector("#countspan")
 
 const min = document.querySelector("#min");
 const sec = document.querySelector("#sec");
@@ -10,10 +11,13 @@ const sec = document.querySelector("#sec");
 
 playBtn.addEventListener("click",(e)=>{
 
+    console.log("button was clicked")
+
     function starttimer (duration,display){
 
-let timer = duration, minutes, seconds
-
+    let timer = duration, minutes, seconds
+    let cycleCount = 0
+    isPaused = false
 
     const interval = setInterval(function(){
 
@@ -26,16 +30,20 @@ let timer = duration, minutes, seconds
         console.log(minutes + ":" + seconds)
         
         min.innerHTML=`${minutes}`
-        sec.innerHTML=`${seconds}`
+        sec.innerHTML=`:${seconds}`
 
         if (--timer < 0){
             clearInterval(interval)
             alert("times up")
-        }
+        }    
 
     },1000)
 
 }
+
+
+
+
 
 const twentyfiveminutes = 25*60
 starttimer(twentyfiveminutes)

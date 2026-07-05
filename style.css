@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: rgb(19, 18, 18);
+    background-color: rgb(20, 19, 19);
 }
 
 header{
@@ -88,7 +88,7 @@ footer{
 }
 
  .play , .pause{
-    border: 2px solid blanchedalmond;
+    border: 2px solid rgb(231, 155, 41);
     height: 50px;
     width: 50px;
     display: flex;
@@ -97,5 +97,13 @@ footer{
     font-size: 35px;
     margin: 10px;
     border-radius: 10px;
+ }
+
+ .play:hover , .pause :hover{
+    background-color: rgb(67, 65, 65);
+ }
+
+  .play:active , .pause :active{
+    background-color: rgb(84, 82, 82);
  }
 
