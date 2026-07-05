@@ -11,6 +11,13 @@ body{
     background-color: rgb(20, 19, 19);
 }
 
+nav{
+    background: linear-gradient(135deg, pink, deeppink, crimson);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;  /*can be comment out*/
+}
+
 header{
     height: 15vh;
     display: flex;
@@ -22,7 +29,7 @@ header{
 
 main{
     height: 70vh;
-    border: 2px solid salmon;
+    /* border: 2px solid salmon; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +38,8 @@ main{
 .left_cont{
     height: 95%;
     width: 45%;
-    border: 2px solid;
+    /* border: 2px solid; */
+    background-color: rgb(28, 27, 27);
     display: flex;
     margin: 0 10px 0 0;
     justify-content: center;
@@ -47,7 +55,8 @@ main{
     width: 50%;
     margin: 0 0 0 10px;
     display: flex;
-    border: 2px solid yellowgreen;
+    /* border: 2px solid yellowgreen; */
+    background-color: rgb(28, 27, 27);
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -62,6 +71,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(240, 255, 255, 10%);
 
     /* border: 2px solid blanchedalmond; */
     padding: 10px;
